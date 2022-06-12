@@ -1,0 +1,234 @@
+body {
+    color: #006064;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 600px;
+}
+
+/*header,
+footer,
+aside,
+section,
+nav {
+    border-radius: 15px;
+}*/
+
+section,
+aside {
+    background-color: rgb(242, 242, 242);
+}
+
+#inputHeader {
+    margin-left: 20%;
+}
+
+header,
+footer,
+nav {
+    background-color: rgb(114, 12, 114);
+    color: white;
+}
+
+h1 {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+button {
+    text-decoration: none;
+    color: #006064;
+}
+
+button {
+    border-radius: 5px;
+    background-color: white;
+    padding: 3px;
+}
+
+.redes {
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav {
+    font-size: large;
+    font-weight: 500;
+}
+
+aside {
+    padding: 20px;
+}
+
+aside ul li {
+    padding: 2px;
+    margin-left: -20px;
+}
+
+header {
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    font-family: 'Smooch', cursive;
+    margin-top: 0%;
+}
+
+#caratula {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    
+}
+
+.portada {
+    height: 300px;
+    width: 920px;
+    align-items: flex-end;
+    background-color: white;
+}
+
+nav ul a {
+    padding: 10px;
+}
+
+article {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+section {
+    padding: 20px;
+}
+
+.item {
+    background-color: #006064;
+    color: white;
+}
+
+
+/* GRIDS II */
+
+header {
+    grid-area: header;
+    justify-content: space-between;
+}
+
+footer {
+    grid-area: footer;
+    justify-content: center;
+}
+
+section {
+    grid-area: section;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+header,
+footer,
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main,
+section {
+    display: grid;
+}
+
+@media screen and (min-width: 320px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: 15% auto 15%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header" "section" "footer";
+    }
+    section {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    aside, #ulNav, #inputHeader {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: 15% auto 15%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header" "section" "footer";
+    }
+    section {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    aside, #ulNav, #inputHeader {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #main {
+        grid-template-columns: 15% auto;
+        grid-template-rows: 15% auto 15%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header header" "aside section" "footer footer";
+    }
+    section {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    #inputNav,
+    #menuBurger {
+        display: none;
+    }   
+    #ulNav, aside, 
+    #inputHeader {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {
+    
+}
