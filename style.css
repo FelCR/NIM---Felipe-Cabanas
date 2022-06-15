@@ -158,3 +158,19 @@ footer {
     background-color: rgb(209, 207, 207);
     border-radius: 15px;
 }
+
+.footer {
+    padding-top: 10px;
+}
+
+.modalText {
+    color: black;
+}
+
+#busInt {
+    background-color: rgb(233, 233, 4);
+}
+
+#learnMo {
+    color: black;
+}
